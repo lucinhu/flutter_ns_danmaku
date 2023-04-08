@@ -475,7 +475,7 @@ class _DanmakuViewState extends State<DanmakuView> {
         ),
       ),
     );
-    painter.layout(maxWidth: 1000);
+    painter.layout();
 
     return Size(painter.width, painter.height);
   }
