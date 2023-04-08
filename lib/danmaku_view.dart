@@ -463,6 +463,7 @@ class _DanmakuViewState extends State<DanmakuView> {
   Size calculateTextSize(String value, double fontSize) {
     var letterSpacing = (fontSize / 20).ceil() * 2.0;
     TextPainter painter = TextPainter(
+      textScaleFactor: MediaQuery.of(context).textScaleFactor,
       locale: Localizations.localeOf(context),
       maxLines: 1,
       textDirection: TextDirection.ltr,
